@@ -16,7 +16,7 @@ banner是一个网页幻灯片播放js插件；简单易用，可简单定义，
 banner遵循的是CMD规范编写的，所以可以使用seajs模块加载器来加载
 
 index.js
-```
+```js
 define(function(require, exports, module){
 	//console.log(require);
 	var $=require("jquery");
@@ -30,7 +30,7 @@ define(function(require, exports, module){
 ```
 
 html
-```
+```html
 <script type="text/javascript" src="./sea.js"></script>
 <script type="text/javascript">
 		seajs.config({
@@ -40,11 +40,11 @@ html
 </script>
 ```
 css
-```
+```html
 <link rel="stylesheet" type="text/css" href="./lib/banner.css">
 ```
 html编写必须按照这种格式才能正常解析,类名也固定
-```
+```html
 <div class="banner-bg" id="test1">
 		<div class="banner-box">
 			 <ul>
@@ -60,8 +60,10 @@ html编写必须按照这种格式才能正常解析,类名也固定
 ```
 
 ### 普通模式加载
+
 为了方便使用banner也支持比普通方式加载
-```
+
+```js
 <script type="text/javascript" src="./lib/jquery-2.1.3.min.js"></script>
 	<script type="text/javascript" src="./lib/banner.js"></script>
 	<script type="text/javascript">
@@ -79,10 +81,11 @@ html编写必须按照这种格式才能正常解析,类名也固定
 
 ### 接口
 banner插件以模块方式加载返回的是banner对象
+```js
     banner.init(jquery对象,{
         //配置项
     });
-
+```
 banner.init返回的当前幻灯片对象，有两个与幻灯片有有关的方法stop和start
 
 + stop();//这个方法停止幻灯自动播放
