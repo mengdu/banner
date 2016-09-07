@@ -1,0 +1,107 @@
+.banner-bg{
+	width: 686px;
+	height: 278px;
+	background: #FFFFFF;
+	position: relative;
+	overflow: hidden;
+}
+.banner-box{
+	width: 2058px;
+	height: 100%;
+	left: 0px;
+	background: #F0F0F0;
+	position: absolute;
+	-webkit-transition: all 1s ease;/* Safari and Chrome or liebao*/
+	-moz-transition: all 1s ease;/*Firefox */
+	-o-transition: all 1s ease;/*Opera */
+	-ms-transition: all 1s ease;/*for ie*/
+	transition: all 1s ease;
+}
+.banner-box ul{
+	  margin: 0;
+	  padding: 0;
+	  outline: none;
+}
+.banner-box  li{
+	left: 0;
+	display: block;
+	margin: 0;
+	padding: 0;
+	outline: none;
+	line-height: 0;/*解决li嵌套img出现多出3像素问题*/
+	font-size: 0;
+	float: left;
+	list-style: none;
+}
+.banner-box  li img{
+	border: none;/*解决ie中出现边框问题*/
+	width: 686px;
+	height: 278px;
+	outline: none;
+}
+.banner-btn-left,.banner-btn-right{
+	background: url("../icon-next-last.png") no-repeat;
+	height: 25px;
+	width: 18px;
+	top: 128px;
+	position: absolute;
+	cursor: pointer;
+}
+.banner-btn-left{
+	background-position: 0px 0;
+		left: 4px;
+}
+.banner-btn-right{
+	background-position: -30px 0;
+		right: 4px;
+}
+.banner-roll{
+	height: 40px;
+	width: 686px;
+	position: absolute;
+	bottom: 0px;
+	background: rgba(255,255,255,0);/*解决ie中的问题*/
+}
+.roll-title,
+.roll-small{
+	width: 100%;
+	height: 100%;
+	bottom:0;
+	position: absolute;
+	-webkit-transition: all 0.5s ease;/* Safari and Chrome or liebao*/
+	-moz-transition: all 0.5s ease;/*Firefox */
+	-o-transition: all 0.5s ease;/*Opera */
+	-ms-transition: all 0.5s ease;/*for ie*/
+	transition: all 0.5s ease;
+}
+.roll-title a{
+	padding: 10px;
+	color: rgba(255,255,255,0.8);
+	font-size: 1em;
+	text-decoration: none;
+}
+.roll-small{
+	background: rgba(0,0,0,0.2);
+	bottom:-40px;
+}
+.roll-small img{
+	width: 50px;
+	height: 30px;
+	float: left;
+	margin-left: 3px;
+	margin-top: 4px;
+	border: solid 1px rgba(255,255,255,0.2);
+	opacity: 0.6;
+	cursor: pointer;
+}
+.banner-roll:hover .roll-title{
+	bottom:-40px;
+}
+.banner-roll:hover .roll-small{
+	bottom:0;
+}
+.roll-small img:hover,
+.banner-now{
+	opacity: 0.9 !important;
+	border: solid 1px rgba(255,255,255,0.5) !important;
+}

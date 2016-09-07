@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>banner模块加载方式</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"><!--移动设备优先user-scalable=no 可以禁用其缩放（zooming）功能-->
+	<script type="text/javascript" src="./sea.js"></script>
+	<script type="text/javascript">
+		seajs.config({
+			base: "./lib",//设置默认加载模块目录
+		});
+		seajs.use("./index.js");
+	</script>
+	<link rel="stylesheet" type="text/css" href="./lib/banner.css">
+	<style type="text/css">
+		body{
+			background: #F2F2F2;
+		}
+		*{margin:0 auto}
+		
+	</style>
+</head>
+<body>
+	<div class="banner-bg" id="test1">
+		<div class="banner-box">
+			 <ul>
+			 	<li><a href=""><img src="./images/wersfd.jpg" alt="感觉自己萌萌哒"></a></li>
+			 	<li><a href=""><img src="./images/1347256122195-change2.jpg" alt="高清墙纸1"></a></li>
+			 	<li><a href=""><img src="./images/1398132342675.jpg" alt="高清墙纸2"></a></li>
+			 	<li><a href=""><img src="./images/1398132385888.jpg" alt="高清墙纸3"></a></li>
+			 	<li><a href=""><img src="./images/1398132397244.jpg" alt="高清墙纸3"></a></li>
+			</ul> 
+		</div>
+		<div class="banner-btn-left"></div>
+		<div class="banner-btn-right"></div>
+	</div>
+</body>
+</html>

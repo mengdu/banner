@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>banner</title>
+	<script type="text/javascript" src="./sea.js"></script>
+	<script type="text/javascript">
+		seajs.config({
+			base: "./lib",//设置默认加载模块目录
+			alias: {
+				//"jquery": "jquery/jquery/1.10.1/jquery.js",
+				//"main": "./main.js",
+			}
+		});
+		seajs.use('./main');//加载入口
+		var t1={};
+		var t2={};
+
+	</script>
+	<link rel="stylesheet" type="text/css" href="./lib/banner.css">
+	<style type="text/css">
+		body{
+			background: #F2F2F2;
+		}
+		*{margin:0 auto}
+		
+	</style>
+</head>
+<body>
+	<div class="banner-bg" id="test1">
+		<div class="banner-box">
+			 <ul>
+			 	<li><a href=""><img src="./images/afa3bf76506f7a711b52318153e34ba4.jpg" alt="魅族flyme OS 5.0"></a></li>
+			 	<li><a href=""><img src="./images/c05b48f51f4210d4652a95891e08eee8.jpg" alt="魅族开学特价"></a></li>
+			 	<li><a href=""><img src="./images/d241db31b7ec431e28125f3420ff6d25.jpg" alt=""></a></li>
+			</ul> 
+		</div>
+		<div class="banner-btn-left"></div>
+		<div class="banner-btn-right"></div>
+		<!-- <div class="banner-roll">
+			<div class="roll-title">
+				<a href="">this is test 这是一个测试。</a>
+			</div>
+			<div class="roll-small">
+				<img src="./images/afa3bf76506f7a711b52318153e34ba4.jpg">
+				<img src="./images/c05b48f51f4210d4652a95891e08eee8.jpg" alt="">
+				<img src="./images/d241db31b7ec431e28125f3420ff6d25.jpg" alt="">
+			</div>
+		</div> -->
+	</div>
+	<div class="banner-bg" id="test2">
+		<div class="banner-box">
+			 <ul>
+			 	<li><a href=""><img src="./images/afa3bf76506f7a711b52318153e34ba4.jpg" alt="魅族flyme OS 5.0"></a></li>
+			 	<li><a href=""><img src="./images/c05b48f51f4210d4652a95891e08eee8.jpg" alt="this is a test"></a></li>
+			 	<li><a href=""><img src="./images/d241db31b7ec431e28125f3420ff6d25.jpg" alt=""></a></li>
+			 	<li><a href=""><img src="./images/d241db31b7ec431e28125f3420ff6d25.jpg" alt=""></a></li>
+			</ul> 
+		</div>
+		<div class="banner-btn-left"></div>
+		<div class="banner-btn-right"></div>
+		<div class="banner-roll">
+			<div class="roll-title">
+				<a href="">this is test 这是一个测试。</a>
+			</div>
+			<div class="roll-small">
+				<img src="./images/afa3bf76506f7a711b52318153e34ba4.jpg">
+				<img src="./images/c05b48f51f4210d4652a95891e08eee8.jpg" alt="">
+				<img src="./images/d241db31b7ec431e28125f3420ff6d25.jpg" alt="">
+			</div>
+		</div>
+	</div>
+	<!-- <img src="./images/afa3bf76506f7a711b52318153e34ba4.jpg" alt="魅族flyme OS 5.0" /> -->
+</body>
+</html>
